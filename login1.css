@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "open sans";
+    color:#fff;
+
+}
+section{
+    position:relative;
+    height:100vh;
+    width: 100%;
+    background-image:url('img/a.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.form-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width:300px;
+    padding:50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+h1{
+    text-transform: uppercase;
+    font-size:2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.control input{
+    width:100%;
+    display: block;
+    padding:10px;
+    color:#222;
+    margin:5px;
+    border: none;
+    outline:1em 0;
+}
+.control input[type="submit"]{
+    background:crimson;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:1.2em;
+    opacity: .8;
+    transition:opacity .3s ease;
+    margin-top: 12px;
+}
+.control input[type="submit"]
+{
+    opacity:1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color:#fff;
+    opacity: .6;
+    transition:opacity .3s  ease;
+}
+.link a:hover{
+    opacity:1;
+
+
+}
+.nk{
+    margin-top:10px;
+}
+.nk1{
+    margin-top:10px;
+    text-decoration: none;
+}
+.control{
+    padding: 2px;
+}
+.box input[type="submit"]:hover
+{
+    color:#000;
+    cursor: pointer;
+
+}
+.name {
+    text-align:center;
+    text-decoration:none;
+    background-color: red;
+    height:30px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.name:hover{
+    background-color: blue;
+    color:white;
+}
+#name{
+    text-decoration:none;
+}
+         
