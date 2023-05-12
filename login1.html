@@ -11,25 +11,25 @@
     <section>
         <div class="form-container">
             <h1>Login form</h1>
-            <form action="#" onclick="emailValidator">
+            <form action="index.html" >
                 <div class="control">
-                    <label for="name">Username</label>
-                    <input type="text" name="name"  id="name">
+                    <label for="name">Email Id</label>
+                    <input type="email" name="name"  id="name">
 
                 </div>
                 <div class="control box">
                        <label for="psw">Password</label>
-                       <input type="password" name="psw" id="">
+                       <input type="password" name="psw" id="psw">
                       
                 </div>
                 <div class="control box">
                     <label for="psw">Confirm Password</label>
-                    <input type="password" name="psw" id="">
+                    <input type="password" name="psw" id="cfpsw">
                    
              </div>
                 <div class="nk"><input type="checkbox">Remember me.
                 <div class="control1box">
-                   <input type="button"><a href="index.html" id="name"><div class="name"><b>LOGIN</b></div></a></input>
+                   <input type="submit" class="name" value="LOGIN" style="width:100%">
                 </div>
             <div class="nk1">
                 <a href="#">Forget password ?</a>
@@ -39,18 +39,21 @@
     <script>
          const emailValidator = (email) => {
   const emailRegex = /^[^\s@]+@[^\s@]+$/;
-  if(!emailRegex.test(email)){
-    return alert("Email is invalid!");}
-else{
-    window.location.href = "./index.html";
-}
-};
+ return emailRegex.test(email)}
 
- const passwordValidator = (password) => {
+ const passwordValidator = () => {
+    const password = document.getElementById("psw")
+    console.log(password);
   const passwordRegex =
     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
-  return passwordRegex.test(password);
+  if(!passwordRegex.test(password)){
+    alert("password is invalid")
+  }
+  else{
+    window.location.replace("index.html")
+  }
 };
+
 
     </script>
 
